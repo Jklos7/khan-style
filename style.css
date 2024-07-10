@@ -1,0 +1,51 @@
+html {
+  font-family: Poppins, sans-serif;
+}
+
+h1 {
+  position: relative;
+  width: max-content;
+}
+
+h1:hover {
+  color: green;
+}
+
+h1::after {
+  content: "";
+  background: linear-gradient(to right, red, blue);
+  border-radius: 100px;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 100ms;
+}
+
+h1:hover::after {
+  width: 0;
+}
+
+#bulb {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+button {
+  padding: 10px;
+  margin: 30px;
+}
+
+#para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p::selection {
+  background-color: red;
+  color: white;
+}
